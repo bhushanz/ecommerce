@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="single.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="detail">
+        <div class="image">
+          <img src=" " alt="" />
+        </div>
+
+        <div class="content">
+          <h2 class="name"></h2>
+
+          <div class="product-price"></div>
+
+          <div class="detail-info">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+              architecto itaque? Recusandae soluta, enim ea consectetur eum
+              dolorem autem sed est dolorum omnis rem illum, maxime cupiditate
+              veniam assumenda? Deleniti.
+            </p>
+          </div>
+          <div class="size">
+            <div class="div1">S</div>
+            <div class="div1">L</div>
+            <div class="div1">XL</div>
+            <div class="div1">XXL</div>
+          </div>
+
+          <div class="iteam">
+            <input type="number" value="1"/>
+            <button>Add To Cart</button>
+          </div>
+        </div>
+      </div>
+<div class="options">
+    
+</div>
+ </main>
+
+    <script type="module">
+      //get datas products in products.json
+      let products = null;
+      fetch("products.json")
+        .then((response) => response.json())
+        .then((data) => {
+          products = data;
+          showDetail();
+        });
+
+      function showDetail() {
+        let detail = document.querySelector(".detail");
+        let productId = new URLSearchParams(window.location.search).get("id");
+        let thisProduct = products.filter((value) => {
+          return value.id == productId;
+        })[0];
+        //if there is no product has id in html
+        //return to home page
+        if (!thisProduct) {
+          window.location.href = "/";
+        }
+        detail.querySelector(".image img").src = thisProduct.iteamImage;
+        detail.querySelector(".content .name").innerHTML =
+          thisProduct.iteamName;
+        detail.querySelector(".content .product-price").innerHTML =
+          thisProduct.price;
+      }
+    </script>
+  </body>
+</html>

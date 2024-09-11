@@ -1,0 +1,172 @@
+
+function ckieRLSckoo(name) {
+    var dc = document.cookie;
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    }
+    else
+    {
+        begin += 2;
+        var end = document.cookie.indexOf(";", begin);
+        if (end == -1) {
+        end = dc.length;
+        }
+    }
+    return decodeURI(dc.substring(begin + prefix.length, end));
+} 
+  
+function neustar_response(score) {
+  (function(d, script) {
+    script = d.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.onload = function(){
+        // remote script has loaded
+    };
+    var myckie = ckieRLSckoo("smartDashLRX");
+    if (myckie == null) {
+        var cookieName = "smartDashLRX";
+        var cookieValue = score;
+        var expirationTime = 2592000;
+        expirationTime = expirationTime * 1000;
+        var date = new Date();
+        var dateTimeNow = date.getTime();
+        date.setTime(dateTimeNow + expirationTime);
+        var date = date.toUTCString();
+        document.cookie = cookieName+"="+cookieValue+"; SameSite=None; Secure; expires="+date+"; path=/; domain=." + location.hostname.replace(/^www\./i, "");
+    }
+
+    
+
+    d.getElementsByTagName('head')[0].appendChild(script);
+}(document));
+  
+}
+
+var myCookie = ckieRLSckoo("smartDash");
+var dt = new Date().getTime();
+var mrkl = "6417_04841";
+var liveintent = "1";
+var lcid = "11052";
+
+if (myCookie == null) {
+
+var dt = new Date().getTime();
+var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+    var r = (dt + Math.random()*16)%16 | 0;
+    dt = Math.floor(dt/16);
+    return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+});
+var cookieName = "smartDash";
+var cookieValue = uuid;
+var expirationTime = 2592000 * 2;
+expirationTime = expirationTime * 1000;
+var ck_date = new Date();
+var dateTimeNow = ck_date.getTime();
+ck_date.setTime(dateTimeNow + expirationTime);
+var ck_date_string = ck_date.toUTCString();
+document.cookie = cookieName+"="+cookieValue+"; SameSite=None; Secure; expires="+ck_date_string+"; path=/; domain=." + location.hostname.replace(/^www\./i, "");
+}
+
+//nstr
+(function(d, script) {
+    script = d.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.onload = function(){
+        // remote script has loaded
+    };
+    script.src = 'https://aa.agkn.com/adscores/g.js?sid=9212306938&cv1='+ckieRLSckoo('smartDash');
+    d.getElementsByTagName('head')[0].appendChild(script);
+  
+
+}(document));
+
+
+//LS
+(function(d, script) {
+    script = d.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.onload = function(){
+        // remote script has loaded
+    };
+    const furl = btoa(window.location.href);
+    let language = navigator.language;
+    script.src = 'https://ghs4.safevisit.online/?lcid=11052&ncookie='+ckieRLSckoo('smartDash')+'&furl='+furl+'&lang='+language;
+    d.getElementsByTagName('head')[0].appendChild(script);
+  
+
+}(document));
+
+
+    
+
+//mrkl
+
+if (mrkl == '0') {
+
+}
+else if (lcid == '11132') {
+    window._svq = window._svq || [];
+    window._svq.push(['_setCustomVar', 'sv_smartdash', ckieRLSckoo('smartDash')]);
+    window._svq.push(['_trackPageView']);
+    (function (d, c) {
+    var sv=d.createElement(c); sv.type='text/javascript';
+    sv.src='//track.sv.rkdms.com/js/sv.js?sv_cid=6417_04841&sv_origin=urbanoutfitters.com';
+    var s=d.getElementsByTagName(c)[0]; s.parentNode.insertBefore(sv, s);
+    })(document, 'script');
+
+    window.addEventListener('_svdatalayer_ready', function(e) {
+        var data = e.detail;
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+        };
+
+        if (data.hmid) {
+            fetch("https://ghs4.safevisit.online/mrkl?hmid="+data.hmid+"&em="+data.email_key+"&lcid=11052&ncookie="+ckieRLSckoo('smartDash')+"&conf="+data.confidence_score, requestOptions)
+                .then(response => response.text())
+                .then(result => console.log(result))
+                .catch(error => console.log('error', error));
+            }
+    });
+    
+}
+else {
+    window._svq = window._svq || [];
+    window._svq.push(['_setCustomVar', 'sv_smartdash', ckieRLSckoo('smartDash')]);
+    window._svq.push(['_trackPageView']);
+    (function (d, c) {
+    var sv=d.createElement(c); sv.type='text/javascript';
+    sv.src='//track.sv.rkdms.com/js/sv.js?sv_cid=6417_04841&sv_origin=urbanoutfitters.com';
+    var s=d.getElementsByTagName(c)[0]; s.parentNode.insertBefore(sv, s);
+    })(document, 'script');
+}
+
+//liveintent
+
+if (liveintent == '1') {
+    window.liQd_did_004t = window.liQd_did_004t || [];
+    var scriptTag = document.createElement('script');
+    scriptTag.src = 'https://d-code.liadm.com/did-004t.min.js';
+    scriptTag['onload'] = function(e) {
+    window.liQd_did_004t.resolve(function(result) { if
+    (result) {
+        var requestOptions = {
+            method: 'GET',
+            redirect: 'follow'
+          };
+          
+          fetch("https://ghs4.safevisit.online/nonid?id="+result.nonId+"&em="+result.md5+"&lcid=11052&ncookie="+ckieRLSckoo('smartDash'), requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
+    }; }, function(err) { console.error(err); },
+    {resolve: ["nonId", "md5"]});
+    }
+    document.head.appendChild(scriptTag);
+}

@@ -1,0 +1,15 @@
+(function(){var S;"use strict";function w(t){return t&&t.__esModule&&Object.prototype.hasOwnProperty.call(t,"default")?t.default:t}var g={exports:{}};/*!
+ * JavaScript Cookie v2.2.1
+ * https://github.com/js-cookie/js-cookie
+ *
+ * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+ * Released under the MIT license
+ */(function(t,_){(function(l){var u;if(t.exports=l(),u=!0,!u){var m=window.Cookies,o=window.Cookies=l();o.noConflict=function(){return window.Cookies=m,o}}})(function(){function l(){for(var o=0,r={};o<arguments.length;o++){var f=arguments[o];for(var a in f)r[a]=f[a]}return r}function u(o){return o.replace(/(%[0-9A-Z]{2})+/g,decodeURIComponent)}function m(o){function r(){}function f(n,i,e){if(!(typeof document>"u")){e=l({path:"/"},r.defaults,e),typeof e.expires=="number"&&(e.expires=new Date(new Date*1+e.expires*864e5)),e.expires=e.expires?e.expires.toUTCString():"";try{var p=JSON.stringify(i);/^[\{\[]/.test(p)&&(i=p)}catch{}i=o.write?o.write(i,n):encodeURIComponent(String(i)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),n=encodeURIComponent(String(n)).replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent).replace(/[\(\)]/g,escape);var d="";for(var s in e)e[s]&&(d+="; "+s,e[s]!==!0&&(d+="="+e[s].split(";")[0]));return document.cookie=n+"="+i+d}}function a(n,i){if(!(typeof document>"u")){for(var e={},p=document.cookie?document.cookie.split("; "):[],d=0;d<p.length;d++){var s=p[d].split("="),c=s.slice(1).join("=");!i&&c.charAt(0)==='"'&&(c=c.slice(1,-1));try{var C=u(s[0]);if(c=(o.read||o)(c,C)||u(c),i)try{c=JSON.parse(c)}catch{}if(e[C]=c,n===C)break}catch{}}return n?e[n]:e}}return r.set=f,r.get=function(n){return a(n,!1)},r.getJSON=function(n){return a(n,!0)},r.remove=function(n,i){f(n,"",l(i,{expires:-1}))},r.defaults={},r.withConverter=m,r}return m(function(){})})})(g);var L=g.exports;const v=w(L);function O(t){return v.get(t)}(S=window.__attentive_cfg)!=null&&S.cxd;const h=window,E=()=>{const t=`
+        .disabledScrolling {
+          overflow: hidden !important;
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          right: 0 !important;
+          bottom: 0 !important;
+        }`,_=document.createElement("style");document.head.appendChild(_),_.appendChild(document.createTextNode(t)),document.body.classList.add("disabledScrolling"),document.documentElement.classList.add("disabledScrolling")},I={ANON_ID_PARAMS:()=>O("urbn_tracer")??null,DISABLE_SCROLLING_CUSTOM_STYLING_NO_SCROLL_LOCK:()=>E(),DISALLOWED_PROPERTIES:()=>document.cookie.includes("att_modal=1")||document.cookie.includes("urbn_webview")||document.cookie.includes("urbn_is_webview"),ENABLE_SCROLLING_CUSTOM_STYLING_NO_SCROLL_LOCK:()=>{document.body.classList.remove("disabledScrolling"),document.documentElement.classList.remove("disabledScrolling")}};h.__attentive_client_cfg=I})();

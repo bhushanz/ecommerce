@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "iteamImage" : "img/pink top.webp",
+        "iteamName": "Glorial pinkk",
+        "price":  " $ 20"
+
+    },
+    {
+        "id": 2,
+        "iteamImage" : "img/2nd.webp",
+        "iteamName": "Bec Low-Rise Micro Mini Skort",
+        "price": "$ 19"
+
+    },
+    {
+        "id": 3,
+        "iteamImage" : "img/3rd.webp",
+        "iteamName": "Seamless Longline Tube Top",
+        "price": "$ 22"
+
+    },
+    {
+        "id":4,
+        "iteamImage" : "img/4th.webp",
+        "iteamName": "Out From Under Bec Mini Dress",
+        "price":"$ 20"
+
+    },
+    {
+        "id": 5,
+        "iteamImage" : "img/5th.webp",
+        "iteamName": "Printed Mesh Tube Top",
+        "price":"$ 16"
+
+    }
+    , {
+        "id": 6,
+        "iteamImage" : "img/6th.webp",
+        "iteamName": "BDG Universal Shrunken Tee",
+        "price": "$ 17"
+
+    }
+]
